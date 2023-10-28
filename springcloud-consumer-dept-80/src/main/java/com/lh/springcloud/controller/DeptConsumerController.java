@@ -24,7 +24,9 @@ public class DeptConsumerController {
     @Autowired
     private RestTemplate restTemplate;
 
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+
+    private static final String REST_URL_PREFIX="http://SPRINGCLOUD-PROVIDER-DEPT";
+//    private static final String REST_URL_PREFIX = "http://localhost:8001";
 
     @RequestMapping("/consumer/dept/add")
     public boolean add(Dept dept){
